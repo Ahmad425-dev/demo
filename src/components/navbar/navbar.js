@@ -24,10 +24,11 @@ const Navbar =()=> {
 
        <image src="" alt="" className="llogo" onClick={()=>setMenu(!useMenu)} >MENU</image>
        <div className="mobmenu" style={{display: useMenu? "":"none"}} >
-         <Link  className="ddesktopMenuListItem" onClick={()=>setMenu(false)}>Home </Link>
+         <Link  className="ddesktopMenuListItem" to="intro" spy={true} smooth={true} offset={-50} duration={500} onClick={()=>setMenu(false)}>Home </Link>
          <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-50} duration={500} className="ddesktopMenuListItem" onClick={()=>setMenu(false)}>About</Link>
          <Link activeClass="active" to="intro" spy={true} smooth={true} offset={-50} duration={500}  className="ddesktopMenuListItem" onClick={()=>setMenu(false)}>Portfolio</Link>
          <Link activeClass="active" to="footer" spy={true} smooth={true} offset={-50} duration={500}  className="ddesktopMenuListItem" onClick={()=>setMenu(false)}>Clients</Link>
+         <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-50} duration={500}  className="ddesktopMenuListItem" onClick={()=>setMenu(false)}>Contact</Link>
        </div>
 
    </nav>
